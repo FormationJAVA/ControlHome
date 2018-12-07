@@ -14,5 +14,4 @@ l'application doit :
   4. contrôler l'intensité de la lumiere de chaque lampe.
   5. contrôler le niveau de son de chaque haut parleur.
   6. chaque peux decrire sont état entre opérationnelle ou en panne.
-  6
 
