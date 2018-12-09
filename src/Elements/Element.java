@@ -1,10 +1,13 @@
 package Elements;
 
+import Geometry.Point;
+
 public class Element {
 	public String name;
 	public Etat state;
 	public boolean isOn;
 	private float value;
+	public Point position;
 	
 	public Element ()
 	{
@@ -34,6 +37,15 @@ public class Element {
 
 	}
 	
+	public void setLocation (Point P)
+	{
+		this.position = P;
+	}
+	
+	public Point getLocation ()
+	{
+		return this.position;
+	}
 	public void Activate ()
 	{
 
