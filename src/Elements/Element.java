@@ -8,7 +8,7 @@ public class Element {
 	public boolean isOn;
 	private float value;
 	public Point position;
-	
+	public float angle;
 	public Element ()
 	{
 		this.name = "Element inconnu";

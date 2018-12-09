@@ -1,5 +1,7 @@
 package Geometry;
 
+
+
 public class Point {
 	
 	public int x;
@@ -39,6 +41,16 @@ public class Point {
 	{
 		this.x = P.x;
 		this.y=P.y;
+	}
+	
+	/**Retourne le resultat de la rotation de P par un angle Angle sur l'origine*/
+	public Point Rot( double Angle)
+	{
+		Point out = new Point ();
+		double theta = (Angle);
+		out.x = (int) Math.round( (this.x * Math.cos (theta)) - (this.y * Math.sin (theta)) );
+		out.y = (int) Math.round( (this.x * Math.sin (theta)) + (this.y * Math.cos (theta)) );
+		return out;
 	}
 	public String toString()
 	{

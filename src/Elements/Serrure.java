@@ -12,5 +12,9 @@ public class Serrure extends Element {
 	{
 		super(n,s,on);
 	}
-
+	
+	public Serrure(String n)
+	{
+		super(n,Etat.Disponible,false);
+	}
 }
